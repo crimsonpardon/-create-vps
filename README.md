@@ -38,9 +38,15 @@ IL8 lets Discord users create Ubuntu 22.04 or Debian 11 containers, then control
 
 ```bash
 git clone https://github.com/crimsonpardon/-create-vps.git
-cd -create-vps
+cd ./-create-vps
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+> The folder name starts with a dash, so use `cd ./-create-vps` (plain `cd -create-vps` fails).
+> On Ubuntu/Debian you may first need: `apt install python3-venv python3-pip`
+> Next time, activate the environment again with `source venv/bin/activate` before `python bot.py`.
 
 ## Setup
 
@@ -52,6 +58,7 @@ pip install -r requirements.txt
 6. Start the bot:
 
 ```bash
+source venv/bin/activate
 python bot.py
 ```
 
