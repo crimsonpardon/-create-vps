@@ -16,9 +16,9 @@ from datetime import datetime, timezone
 
 # ============ VPS LIMITS (edit these) ============
 SERVER_LIMIT = 1       # Max VPS each user can create with /create
-DEFAULT_RAM = '2g'     # RAM per VPS, e.g. '1g', '2g', '4g', '512m'
-DEFAULT_CPU = '1'      # CPU cores per VPS, e.g. '1', '2', '0.5'
-DEFAULT_DISK = '10G'   # Disk per VPS, e.g. '10G', '20G' (label only, not enforced by Docker)
+DEFAULT_RAM = '7g'     # RAM per VPS, e.g. '1g', '2g', '4g', '512m'
+DEFAULT_CPU = '5'      # CPU cores per VPS, e.g. '1', '2', '0.5'
+DEFAULT_DISK = '100G'   # Disk per VPS, e.g. '10G', '20G' (label only, not enforced by Docker)
 # =================================================
 
 # Load environment variables
